@@ -1,0 +1,141 @@
+/* src/pages/ContactPage.css */
+
+/* การจัดวางหน้า Contact */
+.contact-container {
+  padding: 50px 20px;
+  background-color: #f1f8f5; /* ใช้สีพื้นหลังอ่อนเพื่อให้รู้สึกสดชื่น */
+}
+
+/* Hero Section */
+.contact-hero {
+  text-align: center;
+  background-color: #1d9443; /* สีพื้นหลังของส่วน Hero */
+  color: white;
+  padding: 40px 20px;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Section สำหรับข้อมูลติดต่อ */
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-details {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h2 {
+  color: #1d9443;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Form Section */
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  color: #1d9443;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+/* ปุ่ม Submit */
+.btn-submit {
+  padding: 12px 20px;
+  background-color: #ffcc00; /* ปรับสีปุ่มให้เป็นสีเหลืองเพื่อดึงดูด */
+  color: #004d40;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #ff9900;
+}
+
+/* ส่วนแผนที่ (Map) */
+.contact-map {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-map h2 {
+  color: #00796b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contact-form-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details,
+  .contact-form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+
+  .contact-hero p {
+    font-size: 1rem;
+  }
+}

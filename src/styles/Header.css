@@ -1,0 +1,95 @@
+/* src/components/Header.css */
+
+/* กำหนดพื้นฐานของ Header */
+.header {
+  background: linear-gradient(135deg, #1d9443, #56c179); /* เพิ่ม gradient สีเขียว */
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเบาๆ */
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* การจัดการโลโก้ */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px; /* ขนาดโลโก้ที่เหมาะสม */
+  margin-right: 20px;
+  transition: transform 0.3s ease; /* เอฟเฟกต์เมื่อ hover */
+}
+
+.logo-img:hover {
+  transform: scale(1.1); /* ขยายโลโก้เล็กน้อยเมื่อ hover */
+}
+
+/* ชื่อสาขา */
+.header-title {
+  font-size: 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+.header-title:hover {
+  transform: translateY(-5px); /* เอฟเฟกต์การยกตัวของชื่อเมื่อ hover */
+}
+
+/* การตั้งค่า Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-left: 30px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #ffcc00; /* เปลี่ยนพื้นหลังเมื่อ hover */
+  color: #333;
+  transform: translateY(-3px); /* เอฟเฟกต์การเคลื่อนไหว */
+}
+
+/* เพิ่มการตอบสนองสำหรับหน้าจอมือถือ */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+  }
+
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+
+  .navbar-item {
+    margin-left: 20px;
+  }
+}
